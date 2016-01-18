@@ -29,9 +29,6 @@ public class InteractManager extends Listener {
 					return;
 				}
 				
-				if (cooldown.get(p) == null)
-					cooldown.put(p, 0.0);
-				
 				if (cooldown.get(p) > 0){
 					// TODO Cooldown message;
 					return;
@@ -54,6 +51,9 @@ public class InteractManager extends Listener {
 			
 			public void run() {
 				for (Player p : Bukkit.getOnlinePlayers()){
+					if (cooldown.get(p) == null)
+						cooldown.put(p, 0.0);
+					
 					if (cooldown.get(p) > 0){
 						return;
 					}
