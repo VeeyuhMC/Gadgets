@@ -2,5 +2,4 @@ main: me.ImSpooks.Gadgets.Main
 version: 0.1
 name: SmoozeVanity
 commands:
- m1:
- m2:
+ smoozevanity:

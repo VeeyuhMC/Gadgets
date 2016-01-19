@@ -1,10 +1,11 @@
-package me.ImSpooks.Gadgets.Events;
+package me.ImSpooks.Gadgets.Events.ClickEvents;
 
 
 import me.ImSpooks.Gadgets.GUIs.HatMenu;
 import me.ImSpooks.Gadgets.GUIs.VanityMenu;
 
 import org.bukkit.Material;
+import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -20,6 +21,11 @@ public class HatMenuEvent implements Listener {
 			
 			if (e.getCurrentItem() == null)
 				return;
+			
+			if (e.getCurrentItem() != null && !e.getCurrentItem().getType().equals(Material.ARROW)){
+				p.playSound(p.getLocation(), Sound.NOTE_PLING, 1, 2);
+				p.closeInventory();
+			}
 			
 			if (e.getCurrentItem().getType().equals(Material.SKULL_ITEM) && e.getCurrentItem().getDurability() == 3){
 				p.getInventory().setHelmet(e.getCurrentItem());
@@ -46,6 +52,11 @@ public class HatMenuEvent implements Listener {
 			
 			if (e.getCurrentItem() == null)
 				return;
+			
+			if (e.getCurrentItem() != null && !e.getCurrentItem().getType().equals(Material.ARROW)){
+				p.playSound(p.getLocation(), Sound.NOTE_PLING, 1, 2);
+				p.closeInventory();
+			}
 			
 			if (e.getCurrentItem().getType().equals(Material.SKULL_ITEM) && e.getCurrentItem().getDurability() == 3){
 				p.getInventory().setHelmet(e.getCurrentItem());

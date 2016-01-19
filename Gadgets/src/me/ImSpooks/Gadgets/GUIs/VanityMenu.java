@@ -17,12 +17,19 @@ public class VanityMenu {
 		
 		Menu m = new Menu();
 		
-		m.create(inv, 13, Material.DOUBLE_PLANT, 0, "§a§lCoins: " + "coins.amount", new ArrayList<String>(Arrays.asList("", "&eJe beschikt over &6&l" + "coins.amount" + "Tokens&r&e!")));
-		// TODO coins.amount moet de coins zijn die je nu hebt
+		m.create(inv, 13, Material.DOUBLE_PLANT, 0, "§a§lCoins: " + "tokens.amount", new ArrayList<String>(Arrays.asList("&eJe beschikt over &6&l" + "tokens.amount" + " &r&eTokens&r&e!")));
+		// TODO "coins.amount" = Aantal tokens (Smooze Coins/Credits) van de speler;
 		
-		inv.setItem(19, null); // Hiervoor miet ik de lores nog hebben
+		m.create(inv, 19, Material.NETHER_STAR, 0, "&b&lPARTICLES", new ArrayList<>(Arrays.asList(
+				"",
+				"",
+				"",
+				"&8(Aantal vrijgespeelde particles: " + "hats.amount" + "/6)",
+				"",
+				"&eKlik om het Hat menu te openen!"
+				)));
 		
-		inv.setItem(21, null); // Hiervoor miet ik de lores nog hebben // Hiervoor miet ik de lores nog hebben
+		inv.setItem(21, null); // Hiervoor miet ik de lores nog hebben
 
 		m.create(inv, 23, Material.GOLD_HELMET, 0, "&b&lHATS", new ArrayList<String>(Arrays.asList(
 				"",
@@ -32,7 +39,8 @@ public class VanityMenu {
 				"",
 				"&a(Aantal vrijgespeelde hats: " + "hats.amount" + "/42)",
 				"",
-				"&eKlik om het Hat menu te openen!")));
+				"&eKlik om het Hat menu te openen!"
+				)));
 		
 		inv.setItem(25, null); // Hiervoor miet ik de lores nog hebben
 		

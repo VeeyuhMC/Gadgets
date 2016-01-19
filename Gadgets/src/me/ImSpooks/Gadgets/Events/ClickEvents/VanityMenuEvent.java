@@ -1,4 +1,4 @@
-package me.ImSpooks.Gadgets.Events;
+package me.ImSpooks.Gadgets.Events.ClickEvents;
 
 import me.ImSpooks.Gadgets.GUIs.HatMenu;
 import me.ImSpooks.Gadgets.GUIs.ParticleMenu;

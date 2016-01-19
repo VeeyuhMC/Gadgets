@@ -2,5 +2,5 @@ package me.ImSpooks.Gadgets;
 public class TODO {}
 
 /*
- * Config- & PlayerConfig.java moeten een MySQL support hebben
+ * VanityMenu.class -> String "coins.amount" = Aantal tokens (Smooze Coins/Credits) van de speler;
  */
