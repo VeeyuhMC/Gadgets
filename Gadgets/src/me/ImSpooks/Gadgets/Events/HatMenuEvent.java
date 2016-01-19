@@ -14,7 +14,7 @@ public class HatMenuEvent implements Listener {
 	
 	@EventHandler
 	public void onClick(InventoryClickEvent e){
-		if (e.getInventory().getName().equalsIgnoreCase("§7Vanity Menu - Hats (1/2)")){
+		if (e.getInventory().getName().equalsIgnoreCase("§8Vanity Menu - Hats (1/2)")){
 			Player p = (Player) e.getWhoClicked();
 			e.setCancelled(true);
 			
@@ -37,7 +37,7 @@ public class HatMenuEvent implements Listener {
 			}
 		}
 		
-		else if (e.getInventory().getName().equalsIgnoreCase("§7Vanity Menu - Hats (2/2)")){
+		else if (e.getInventory().getName().equalsIgnoreCase("§8Vanity Menu - Hats (2/2)")){
 			Player p = (Player) e.getWhoClicked();
 			e.setCancelled(true);
 			

@@ -14,7 +14,7 @@ public class VanityMenuEvent implements Listener{
 	
 	@EventHandler
 	public void onClick(InventoryClickEvent e){
-		if (e.getInventory().getName().equalsIgnoreCase("§7Vanity Menu")){
+		if (e.getInventory().getName().equalsIgnoreCase("§8Vanity Menu")){
 			Player p = (Player) e.getWhoClicked();
 			e.setCancelled(true);
 			

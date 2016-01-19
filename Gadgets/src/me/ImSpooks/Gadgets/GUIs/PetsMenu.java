@@ -11,7 +11,7 @@ public class PetsMenu {
 	
 	@SuppressWarnings("deprecation")
 	public static void menu(Player p){
-		Inventory inv = Bukkit.createInventory(null, 6*9, "�7Vanity Menu - Pets (1/1)");
+		Inventory inv = Bukkit.createInventory(null, 6*9, "§8Vanity Menu - Pets (1/1)");
 		
 		Menu m = new Menu();
 		
@@ -38,7 +38,7 @@ public class PetsMenu {
 		m.create(inv, 25, Material.ENDER_PEARL, 0, "&bTeleporteer je Pet naar jouw!", null);
 		m.create(inv, 34, Material.NAME_TAG, 0, "&bGa op je Pet zitten!", null);
 
-		m.create(inv, 48, Material.ARROW, 0, "&bKlik hier om terug te gaan!", null);
+		m.create(inv, 48, Material.ARROW, 0, "&b← Klik hier om naar de vorige pagina te gaan", null);
 		m.create(inv, 49, Material.BONE, 0, "&bKlik hier om je Pet te laten despawnen!", null);
 
 		p.openInventory(inv);
