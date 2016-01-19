@@ -13,7 +13,7 @@ import org.bukkit.inventory.Inventory;
 public class VanityMenu {
 	
 	public static void menu(Player p){
-		Inventory inv = Bukkit.createInventory(null, 5*9, "§7Vanity Menu");
+		Inventory inv = Bukkit.createInventory(null, 5*9, "§8Vanity Menu");
 		
 		Menu m = new Menu();
 		
@@ -22,11 +22,14 @@ public class VanityMenu {
 		
 		m.create(inv, 19, Material.NETHER_STAR, 0, "&b&lPARTICLES", new ArrayList<>(Arrays.asList(
 				"",
+				"&7Muziek",
+				"&7... Hartjes",
+				"&7VUUR!",
+				"&7Selecteer de particle die goed bij jou past!",
 				"",
+				"&8(Aantal vrijgespeelde particles: " + "particles.amount" + "/6)",
 				"",
-				"&8(Aantal vrijgespeelde particles: " + "hats.amount" + "/6)",
-				"",
-				"&eKlik om het Hat menu te openen!"
+				"&eKlik om het Particle menu te openen!"
 				)));
 		
 		inv.setItem(21, null); // Hiervoor miet ik de lores nog hebben
@@ -37,7 +40,7 @@ public class VanityMenu {
 				"&7om jou emotie te laten zien ... of kies",
 				"&7een hat die echt bij jou past!",
 				"",
-				"&a(Aantal vrijgespeelde hats: " + "hats.amount" + "/42)",
+				"&8(Aantal vrijgespeelde hats: " + "hats.amount" + "/42)",
 				"",
 				"&eKlik om het Hat menu te openen!"
 				)));

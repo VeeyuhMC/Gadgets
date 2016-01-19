@@ -14,14 +14,14 @@ public class PetsMenuEvent implements Listener {
 	@SuppressWarnings("deprecation")
 	@EventHandler
 	public void onClick(InventoryClickEvent e){
-		if (e.getInventory().getName().equalsIgnoreCase("§7Vanity Menu - Pets (1/1)")){
+		if (e.getInventory().getName().equalsIgnoreCase("§8Vanity Menu - Pets (1/1)")){
 			e.setCancelled(true);
 			Player p = (Player) e.getWhoClicked();
 			
-			if (e.getCurrentItem() == null)
+			if (e.getCurrentItem() == null || e.getCurrentItem().getType().equals(Material.AIR))
 				return;
 			
-			if (e.getCurrentItem() != null && !e.getCurrentItem().getType().equals(Material.ARROW) &&
+			if (!e.getCurrentItem().getType().equals(Material.ARROW) &&
 					!e.getCurrentItem().getType().equals(Material.SADDLE) &&
 					!e.getCurrentItem().getType().equals(Material.ENDER_PEARL) &&
 					!e.getCurrentItem().getType().equals(Material.NAME_TAG)){

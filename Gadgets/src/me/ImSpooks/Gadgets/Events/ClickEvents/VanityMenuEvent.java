@@ -14,11 +14,11 @@ public class VanityMenuEvent implements Listener{
 	
 	@EventHandler
 	public void onClick(InventoryClickEvent e){
-		if (e.getInventory().getName().equalsIgnoreCase("§7Vanity Menu")){
+		if (e.getInventory().getName().equalsIgnoreCase("§8Vanity Menu")){
 			Player p = (Player) e.getWhoClicked();
 			e.setCancelled(true);
 			
-			if (e.getCurrentItem() == null)
+			if (e.getCurrentItem() == null || e.getCurrentItem().getType().equals(Material.AIR))
 				return;
 			
 			if (e.getCurrentItem().getType().equals(Material.NETHER_STAR)){

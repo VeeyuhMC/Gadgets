@@ -20,14 +20,14 @@ public class MorphMenuEvent implements Listener {
 	@SuppressWarnings("deprecation")
 	@EventHandler
 	public void onClick(InventoryClickEvent e){
-		if (e.getInventory().getName().equalsIgnoreCase("§7Vanity Menu - Morphs (1/1)")){
+		if (e.getInventory().getName().equalsIgnoreCase("§8Vanity Menu - Morphs (1/1)")){
 			Player p = (Player) e.getWhoClicked();
 			e.setCancelled(true);
 			
-			if (e.getCurrentItem() == null)
+			if (e.getCurrentItem() == null || e.getCurrentItem().getType().equals(Material.AIR))
 				return;
 			
-			if (e.getCurrentItem() != null && !e.getCurrentItem().getType().equals(Material.ARROW)){
+			if (!e.getCurrentItem().getType().equals(Material.ARROW)){
 				p.playSound(p.getLocation(), Sound.NOTE_PLING, 1, 2);
 				p.closeInventory();
 			}

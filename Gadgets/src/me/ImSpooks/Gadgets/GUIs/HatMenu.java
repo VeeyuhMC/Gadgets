@@ -23,7 +23,7 @@ import com.mojang.authlib.properties.Property;
 public class HatMenu {
 	
 	public static void menu1(Player p){
-		Inventory inv = Bukkit.createInventory(null, 6*9, "§7Vanity Menu - Hats (1/2)");
+		Inventory inv = Bukkit.createInventory(null, 6*9, "§8Vanity Menu - Hats (1/2)");
 
 		Menu m = new Menu();
 		HatMenu hm = new HatMenu();
@@ -53,14 +53,14 @@ public class HatMenu {
 		hm.create(inv, 34, "&eOogbal", null, "http://textures.minecraft.net/texture/2cef87772afd85b468f4c7fb9571e31435ef765ad413fe460262150423e2021");
 
 		m.create(inv, 48, Material.ARROW, 0, "&b← Klik hier om naar de vorige pagina te gaan", null);
-		m.create(inv, 49, Material.GOLD_HELMET, 0, "&bKlik hier om je Hat af te doen!", null);
-		m.create(inv, 50, Material.ARROW, 0, "&bKlik hier om naar de volgende pagina te gaan →", null);
+		m.create(inv, 49, Material.GOLD_HELMET, 0, "&cKlik hier om je Hat af te doen!", null);
+		m.create(inv, 50, Material.ARROW, 0, "&b→ Klik hier om naar de volgende pagina te gaan", null);
 
 		p.openInventory(inv);
 	}
 	
 	public static void menu2(Player p){ 
-		Inventory inv = Bukkit.createInventory(null, 6*9, "§7Vanity Menu - Hats (2/2)");
+		Inventory inv = Bukkit.createInventory(null, 6*9, "§8Vanity Menu - Hats (2/2)");
 		
 		Menu m = new Menu();
 		HatMenu hm = new HatMenu();
@@ -71,7 +71,7 @@ public class HatMenu {
 		hm.create(inv, 13, "§eDerp", null, "http://textures.minecraft.net/texture/3baabe724eae59c5d13f442c7dc5d2b1c6b70c2f83364a488ce5973ae80b4c3");
 		hm.create(inv, 14, "§eForever Crying", null, "http://textures.minecraft.net/texture/1f1b875de49c587e3b4023ce24d472ff27583a1f054f37e73a1154b5b5498");
 		hm.create(inv, 15, "§eWink", null, "http://textures.minecraft.net/texture/f4ea2d6f939fefeff5d122e63dd26fa8a427df90b2928bc1fa89a8252a7e");
-		hm.create(inv, 16, "§eNederland", null, "http://textures.minecraft.net/texture/c23cf210edea396f2f5dfbced69848434f93404eefeabf54b23c073b090adf");
+		hm.create(inv, 16, "§eNederlandse Vlag", null, "http://textures.minecraft.net/texture/c23cf210edea396f2f5dfbced69848434f93404eefeabf54b23c073b090adf");
 		
 		hm.create(inv, 19, "§eDoodshoofd", null, "http://textures.minecraft.net/texture/1ae3855f952cd4a03c148a946e3f812a5955ad35cbcb52627ea4acd47d3081");
 		hm.create(inv, 20, "§eDiamanten Steve", null, "http://textures.minecraft.net/texture/10b8eb333622ae7de9b53b3602f41f63db9c2528b5be231ac96516611fb1a");
@@ -86,11 +86,11 @@ public class HatMenu {
 		hm.create(inv, 30, "§ePickachu", null, "http://textures.minecraft.net/texture/dfa695b59618b3616b6aaa910c5a10146195edd6367d25e9399a74ceef966");
 		hm.create(inv, 31, "§eLeafeon", null, "http://textures.minecraft.net/texture/b79daa21f9eeeb6dc7f656b055d6ac3090b3c586cbe411b91fb9829850da7c85");
 		hm.create(inv, 32, "§eCaterpie", null, "http://textures.minecraft.net/texture/8aa253fadd897a6a19aad3959c44fb4ceac5a8ca588f10e52ec8cfbb4144c6d");
-		hm.create(inv, 33, "§eWereld", null, "http://textures.minecraft.net/texture/b1dd4fe4a429abd665dfdb3e21321d6efa6a6b5e7b956db9c5d59c9efab25");
-		hm.create(inv, 34, "§eKert Cadeau", null, "http://textures.minecraft.net/texture/f5612dc7b86d71afc1197301c15fd979e9f39e7b1f41d8f1ebdf8115576e2e");
+		hm.create(inv, 33, "§eWereldbol", null, "http://textures.minecraft.net/texture/b1dd4fe4a429abd665dfdb3e21321d6efa6a6b5e7b956db9c5d59c9efab25");
+		hm.create(inv, 34, "§eCadeau", null, "http://textures.minecraft.net/texture/f5612dc7b86d71afc1197301c15fd979e9f39e7b1f41d8f1ebdf8115576e2e");
 
 		m.create(inv, 48, Material.ARROW, 0, "&b← Klik hier om naar de vorige pagina te gaan", null);
-		m.create(inv, 49, Material.GOLD_HELMET, 0, "&bKlik hier om je Hat af te doen!", null);
+		m.create(inv, 49, Material.GOLD_HELMET, 0, "&cKlik hier om je Hat af te doen!", null);
 
 		p.openInventory(inv);
 	}

@@ -10,7 +10,7 @@ import org.bukkit.inventory.Inventory;
 public class ParticleMenu {
 	
 	public static void menu(Player p){
-		Inventory inv = Bukkit.createInventory(null, 4*9, "§7Vanity Menu - Particles (1/1)");
+		Inventory inv = Bukkit.createInventory(null, 4*9, "§8Vanity Menu - Particles (1/1)");
 		
 		Menu m = new Menu();
 		
@@ -22,7 +22,7 @@ public class ParticleMenu {
 		m.create(inv, 15, Material.RECORD_4, 0, "&eMusic Particle", null);
 		
 		m.create(inv, 30, Material.ARROW, 0, "&b← Klik hier om naar de vorige pagina te gaan", null);
-		m.create(inv, 31, Material.NETHER_STAR, 0, "&bKlik hier om je particle uit te zetten", null);
+		m.create(inv, 31, Material.NETHER_STAR, 0, "&cKlik hier om je particle uit te zetten", null);
 		
 		p.openInventory(inv);
 	}

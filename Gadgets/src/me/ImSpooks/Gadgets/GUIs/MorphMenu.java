@@ -11,7 +11,7 @@ public class MorphMenu {
 	
 	@SuppressWarnings("deprecation")
 	public static void menu(Player p){
-		Inventory inv = Bukkit.createInventory(null, 4*9, "§7Vanity Menu - Morphs (1/1)");
+		Inventory inv = Bukkit.createInventory(null, 4*9, "§8Vanity Menu - Morphs (1/1)");
 		
 		Menu m = new Menu();
 		
@@ -24,7 +24,7 @@ public class MorphMenu {
 		m.create(inv, 15, Material.getMaterial(383), 68, "&eGuardian Morph", null);
 		
 		m.create(inv, 30, Material.ARROW, 0, "&b← Klik hier om naar de vorige pagina te gaan", null);
-		m.create(inv, 31, Material.SKULL_ITEM, 0, "&bKlik hier om je particle uit te zetten", null);
+		m.create(inv, 31, Material.SKULL_ITEM, 0, "&cKlik hier om je particle uit te zetten", null);
 		
 		p.openInventory(inv);
 	}
