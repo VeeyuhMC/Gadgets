@@ -13,7 +13,7 @@ import org.bukkit.inventory.Inventory;
 public class VanityMenu {
 	
 	public static void menu(Player p){
-		Inventory inv = Bukkit.createInventory(null, 5*9, "§8Vanity Menu");
+		Inventory inv = Bukkit.createInventory(null, 5*9, "§7Vanity Menu");
 		
 		Menu m = new Menu();
 		
@@ -24,7 +24,7 @@ public class VanityMenu {
 		
 		inv.setItem(21, null); // Hiervoor miet ik de lores nog hebben // Hiervoor miet ik de lores nog hebben
 
-		m.create(inv, 23, Material.GOLD_HELMET, 0, "&b&lHATS!", new ArrayList<String>(Arrays.asList(
+		m.create(inv, 23, Material.GOLD_HELMET, 0, "&b&lHATS", new ArrayList<String>(Arrays.asList(
 				"",
 				"&7Selecteer een toffe hat,",
 				"&7om jou emotie te laten zien ... of kies",
@@ -32,15 +32,15 @@ public class VanityMenu {
 				"",
 				"&a(Aantal vrijgespeelde hats: " + "hats.amount" + "/42)",
 				"",
-				"&eKlik om het HAT menu te openen!")));
+				"&eKlik om het Hat menu te openen!")));
 		
 		inv.setItem(25, null); // Hiervoor miet ik de lores nog hebben
 		
 		inv.setItem(28, null); // Hiervoor miet ik de lores nog hebben
 		
-		m.create(inv, 30, Material.STAINED_GLASS_PANE, 7, "&cDit komt binnenkort!", new ArrayList<String>(Arrays.asList("&7&l??")));
-		m.create(inv, 32, Material.STAINED_GLASS_PANE, 7, "&cDit komt binnenkort!", new ArrayList<String>(Arrays.asList("&7&l??")));
-		m.create(inv, 34, Material.STAINED_GLASS_PANE, 7, "&cDit komt binnenkort!", new ArrayList<String>(Arrays.asList("&7&l??")));
+		m.create(inv, 30, Material.STAINED_GLASS_PANE, 7, "&7&l??", null);
+		m.create(inv, 32, Material.STAINED_GLASS_PANE, 7, "&7&l??", null);
+		m.create(inv, 34, Material.STAINED_GLASS_PANE, 7, "&7&l??", null);
 		
 		p.openInventory(inv);
 	}

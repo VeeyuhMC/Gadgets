@@ -61,6 +61,8 @@ public class Main extends JavaPlugin {
 			String label, String[] args) {
 		if (command.getName().equalsIgnoreCase("m1"))
 			HatMenu.menu1((Player)sender);
+		if (command.getName().equalsIgnoreCase("m2"))
+			HatMenu.menu2((Player)sender);
 		return true;
 	}
 }

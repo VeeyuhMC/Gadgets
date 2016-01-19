@@ -11,7 +11,7 @@ public class PetsMenu {
 	
 	@SuppressWarnings("deprecation")
 	public static void menu(Player p){
-		Inventory inv = Bukkit.createInventory(null, 6*9, "§8Vanity Menu - Pets (1/1)");
+		Inventory inv = Bukkit.createInventory(null, 6*9, "§7Vanity Menu - Pets (1/1)");
 		
 		Menu m = new Menu();
 		

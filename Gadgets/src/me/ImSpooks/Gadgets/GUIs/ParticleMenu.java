@@ -10,7 +10,7 @@ import org.bukkit.inventory.Inventory;
 public class ParticleMenu {
 	
 	public static void menu(Player p){
-		Inventory inv = Bukkit.createInventory(null, 4*9, "§8Vanity Menu - Particles (1/1)");
+		Inventory inv = Bukkit.createInventory(null, 4*9, "§7Vanity Menu - Particles (1/1)");
 		
 		Menu m = new Menu();
 		

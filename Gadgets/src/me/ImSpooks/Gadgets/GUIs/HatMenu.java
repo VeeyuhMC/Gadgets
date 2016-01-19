@@ -23,7 +23,7 @@ import com.mojang.authlib.properties.Property;
 public class HatMenu {
 	
 	public static void menu1(Player p){
-		Inventory inv = Bukkit.createInventory(null, 6*9, "§8Vanity Menu - Hats (1/2)");
+		Inventory inv = Bukkit.createInventory(null, 6*9, "§7Vanity Menu - Hats (1/2)");
 
 		Menu m = new Menu();
 		HatMenu hm = new HatMenu();
@@ -60,7 +60,7 @@ public class HatMenu {
 	}
 	
 	public static void menu2(Player p){ 
-		Inventory inv = Bukkit.createInventory(null, 6*9, "§8Vanity Menu - Hats (2/2)");
+		Inventory inv = Bukkit.createInventory(null, 6*9, "§7Vanity Menu - Hats (2/2)");
 		
 		Menu m = new Menu();
 		HatMenu hm = new HatMenu();
@@ -71,7 +71,7 @@ public class HatMenu {
 		hm.create(inv, 13, "§eDerp", null, "http://textures.minecraft.net/texture/3baabe724eae59c5d13f442c7dc5d2b1c6b70c2f83364a488ce5973ae80b4c3");
 		hm.create(inv, 14, "§eForever Crying", null, "http://textures.minecraft.net/texture/1f1b875de49c587e3b4023ce24d472ff27583a1f054f37e73a1154b5b5498");
 		hm.create(inv, 15, "§eWink", null, "http://textures.minecraft.net/texture/f4ea2d6f939fefeff5d122e63dd26fa8a427df90b2928bc1fa89a8252a7e");
-		hm.create(inv, 16, "§eNederland", null, "textures.minecraft.net/texture/c23cf210edea396f2f5dfbced69848434f93404eefeabf54b23c073b090adf");
+		hm.create(inv, 16, "§eNederland", null, "http://textures.minecraft.net/texture/c23cf210edea396f2f5dfbced69848434f93404eefeabf54b23c073b090adf");
 		
 		hm.create(inv, 19, "§eDoodshoofd", null, "http://textures.minecraft.net/texture/1ae3855f952cd4a03c148a946e3f812a5955ad35cbcb52627ea4acd47d3081");
 		hm.create(inv, 20, "§eDiamanten Steve", null, "http://textures.minecraft.net/texture/10b8eb333622ae7de9b53b3602f41f63db9c2528b5be231ac96516611fb1a");
@@ -110,7 +110,7 @@ public class HatMenu {
         inv.setItem(slot, i);
         return i;
     }
-	
+
     public ItemStack getSkull(String url, String name) {
         ItemStack head = new ItemStack(Material.SKULL_ITEM, 1, (short)3);
         if(url.isEmpty())return head;
