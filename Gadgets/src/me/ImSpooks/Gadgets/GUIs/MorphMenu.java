@@ -21,10 +21,10 @@ public class MorphMenu {
 		m.create(inv, 13, Material.getMaterial(383), 51, "&eSkeleton Morph", null);
 		m.create(inv, 14, Material.getMaterial(383), 66, "&eWitch Morph", null);
 		m.create(inv, 15, Material.getMaterial(383), 61, "&eBlaze Morph", null);
-		m.create(inv, 15, Material.getMaterial(383), 68, "&eGuardian Morph", null);
+		m.create(inv, 16, Material.getMaterial(383), 68, "&eGuardian Morph", null);
 		
 		m.create(inv, 30, Material.ARROW, 0, "&b← Klik hier om naar de vorige pagina te gaan", null);
-		m.create(inv, 31, Material.SKULL_ITEM, 0, "&cKlik hier om je particle uit te zetten", null);
+		m.create(inv, 31, Material.SKULL_ITEM, 0, "&cKlik hier om je morph uit te zetten", null);
 		
 		p.openInventory(inv);
 	}

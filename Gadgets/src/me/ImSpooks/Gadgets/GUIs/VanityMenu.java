@@ -32,9 +32,18 @@ public class VanityMenu {
 				"&eKlik om het Particle menu te openen!"
 				)));
 		
-		inv.setItem(21, null); // Hiervoor miet ik de lores nog hebben
+		m.create(inv, 21, Material.BONE, 0, "&b&lPETS", new ArrayList<>(Arrays.asList(
+				"",
+				"&7Altijd een huisdier gewild?",
+				"&7nu is het je kans! Selecteer een lief diertje,",
+				"&7doe jou volgt door de lobby!",
+				"",
+				"&8(Aantal vrijgespeelde gadgets: " + "pets.amount" + "/18)",
+				"",
+				"&eKlik om het Morph menu te openen!"
+				)));
 
-		m.create(inv, 23, Material.GOLD_HELMET, 0, "&b&lHATS", new ArrayList<String>(Arrays.asList(
+		m.create(inv, 23, Material.GOLD_HELMET, 0, "&b&lHATS", new ArrayList<>(Arrays.asList(
 				"",
 				"&7Selecteer een toffe hat,",
 				"&7om jou emotie te laten zien ... of kies",
@@ -45,9 +54,25 @@ public class VanityMenu {
 				"&eKlik om het Hat menu te openen!"
 				)));
 		
-		inv.setItem(25, null); // Hiervoor miet ik de lores nog hebben
+		m.create(inv, 25, Material.SKULL_ITEM, 0, "&b&lMORPHS", new ArrayList<>(Arrays.asList(
+				"",
+				"&7Heb jij altijd a een mob willen zijn?",
+				"&7Selecteer jou favoreite mob en verander in hem!",
+				"",
+				"&8(Aantal vrijgespeelde gadgets: " + "morphs.amount" + "/7)",
+				"",
+				"&eKlik om het Morph menu te openen!"
+				)));
 		
-		inv.setItem(28, null); // Hiervoor miet ik de lores nog hebben
+		m.create(inv, 28, Material.REDSTONE, 0, "&b&lGADGETS", new ArrayList<>(Arrays.asList(
+				"",
+				"&7Selecteer jou favoriete snufje,",
+				"&7explosies... vuurwerk!! Kies maar wat tofs!",
+				"",
+				"&8(Aantal vrijgespeelde gadgets: " + "gadgets.amount" + "/UNKNOWN)",
+				"",
+				"&eKlik om het Gadget menu te openen!"
+				)));
 		
 		m.create(inv, 30, Material.STAINED_GLASS_PANE, 7, "&7&l??", null);
 		m.create(inv, 32, Material.STAINED_GLASS_PANE, 7, "&7&l??", null);

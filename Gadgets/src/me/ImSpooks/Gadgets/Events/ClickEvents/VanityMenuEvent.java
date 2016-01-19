@@ -1,6 +1,7 @@
 package me.ImSpooks.Gadgets.Events.ClickEvents;
 
 import me.ImSpooks.Gadgets.GUIs.HatMenu;
+import me.ImSpooks.Gadgets.GUIs.MorphMenu;
 import me.ImSpooks.Gadgets.GUIs.ParticleMenu;
 import me.ImSpooks.Gadgets.GUIs.PetsMenu;
 
@@ -34,7 +35,7 @@ public class VanityMenuEvent implements Listener{
 			}
 			
 			else if (e.getCurrentItem().getType().equals(Material.SKULL_ITEM)){
-				
+				MorphMenu.menu(p);
 			}
 			
 			else if (e.getCurrentItem().getType().equals(Material.REDSTONE)){
