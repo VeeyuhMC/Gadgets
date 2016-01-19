@@ -15,15 +15,16 @@ public class VanityMenu {
 	public static void menu(Player p){
 		Inventory inv = Bukkit.createInventory(null, 5*9, "§7Vanity Menu");
 		
+		Menu m = new Menu();
 		
-		Menu.create(inv, 13, Material.DOUBLE_PLANT, 0, "§a§lCoins: " + "coins.amount", new ArrayList<String>(Arrays.asList("", "&eJe beschikt over &6&l" + "coins.amount" + "Tokens&r&e!")));
+		m.create(inv, 13, Material.DOUBLE_PLANT, 0, "§a§lCoins: " + "coins.amount", new ArrayList<String>(Arrays.asList("", "&eJe beschikt over &6&l" + "coins.amount" + "Tokens&r&e!")));
 		// TODO coins.amount moet de coins zijn die je nu hebt
 		
 		inv.setItem(19, null); // Hiervoor miet ik de lores nog hebben
 		
 		inv.setItem(21, null); // Hiervoor miet ik de lores nog hebben // Hiervoor miet ik de lores nog hebben
 
-		Menu.create(inv, 23, Material.DOUBLE_PLANT, 0, "&b&lHATS!", new ArrayList<String>(Arrays.asList(
+		m.create(inv, 23, Material.DOUBLE_PLANT, 0, "&b&lHATS!", new ArrayList<String>(Arrays.asList(
 				"",
 				"&7Selecteer een toffe hat,",
 				"&7om jou emotie te laten zien ... of kies",
@@ -37,9 +38,9 @@ public class VanityMenu {
 		
 		inv.setItem(28, null); // Hiervoor miet ik de lores nog hebben
 		
-		Menu.create(inv, 30, Material.STAINED_GLASS_PANE, 7, "&cDit komt binnenkort!", new ArrayList<String>(Arrays.asList("", "&7&l??")));
-		Menu.create(inv, 32, Material.STAINED_GLASS_PANE, 7, "&cDit komt binnenkort!", new ArrayList<String>(Arrays.asList("", "&7&l??")));
-		Menu.create(inv, 34, Material.STAINED_GLASS_PANE, 7, "&cDit komt binnenkort!", new ArrayList<String>(Arrays.asList("", "&7&l??")));
+		m.create(inv, 30, Material.STAINED_GLASS_PANE, 7, "&cDit komt binnenkort!", new ArrayList<String>(Arrays.asList("", "&7&l??")));
+		m.create(inv, 32, Material.STAINED_GLASS_PANE, 7, "&cDit komt binnenkort!", new ArrayList<String>(Arrays.asList("", "&7&l??")));
+		m.create(inv, 34, Material.STAINED_GLASS_PANE, 7, "&cDit komt binnenkort!", new ArrayList<String>(Arrays.asList("", "&7&l??")));
 		
 		p.openInventory(inv);
 	}

@@ -3,7 +3,7 @@ package me.ImSpooks.Gadgets.Events;
 import java.util.HashMap;
 import java.util.Map;
 
-import me.ImSpooks.Gadgets.Listener;
+import me.ImSpooks.Gadgets.Main;
 import me.ImSpooks.Gadgets.Commands.ToggleGadgets;
 import me.ImSpooks.Gadgets.Gadgets.Gadget;
 import me.ImSpooks.Gadgets.Gadgets.RegisteredGadgets;
@@ -11,10 +11,11 @@ import me.ImSpooks.Gadgets.Gadgets.RegisteredGadgets;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.scheduler.BukkitRunnable;
 
-public class InteractManager extends Listener {
+public class InteractManager implements Listener {
 	
 	Map<Player, Double> cooldown = new HashMap<Player, Double>();
 	@EventHandler
@@ -43,7 +44,7 @@ public class InteractManager extends Listener {
 	}
 	
 	public double getCooldown(Player p){
-		return cooldown.get(p);
+		return cooldown.get(p) == null ? 0.0 : cooldown.get(p);
 	}
 	
 	public void cooldownSupport(){
@@ -62,6 +63,6 @@ public class InteractManager extends Listener {
 					}
 				}
 			}
-		}.runTaskTimer(plugin, 0, 1);
+		}.runTaskTimer(Main.plugin, 0, 1);
 	}
 }

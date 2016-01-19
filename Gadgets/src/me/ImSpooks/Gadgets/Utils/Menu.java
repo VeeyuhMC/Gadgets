@@ -11,11 +11,12 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 public class Menu {
 	
-    public static ItemStack create(Inventory inv, int slot, Material material, int damage, String name, ArrayList<String> lore) {
+    public ItemStack create(Inventory inv, int slot, Material material, int damage, String name, ArrayList<String> lore) {
         ItemStack i = new ItemStack(material, 1, (byte) damage);
         ItemMeta im = i.getItemMeta();
         im.setDisplayName(ChatColor.translateAlternateColorCodes('&', name));
         List<String> lo = new ArrayList<String>();
+        if (lore!=null)
         for (String il : lore) {
             lo.add(ChatColor.translateAlternateColorCodes('&', il));
         }
